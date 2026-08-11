@@ -13,7 +13,6 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  resource_manager_model:
-    models:
+  resource_manager:
       staging:
         +materialized: view  

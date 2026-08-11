@@ -1413,3 +1413,269 @@ There are 1 unused configuration paths:
 [0m16:29:21.620642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F7DB7BA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F7E70BF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F7E1AA1B0>]}
 [0m16:29:21.620642 [debug] [MainThread]: Flushing usage events
 [0m16:29:23.128573 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:56:32.452013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D216A1910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D235A7320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D242BBA10>]}
+
+
+============================== 08:56:32.460588 | 26cbad08-d016-4e14-b49e-eed9b928377a ==============================
+[0m08:56:32.460588 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:56:32.460588 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'c:\\Users\\Mosev\\Documents\\GitHub\\Resource_Manager\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m08:56:43.250998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '26cbad08-d016-4e14-b49e-eed9b928377a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D29546840>]}
+[0m08:56:43.308872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '26cbad08-d016-4e14-b49e-eed9b928377a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D2957D460>]}
+[0m08:56:43.308872 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m08:56:43.939700 [debug] [MainThread]: checksum: cac3b9519010e47bfbeb71ca6efb4867dae2858687671594dc23fefc94ecf25d, vars: {}, profile: , target: dev, version: 1.9.1
+[0m08:56:44.084855 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:56:44.085857 [debug] [MainThread]: previous checksum: cac3b9519010e47bfbeb71ca6efb4867dae2858687671594dc23fefc94ecf25d, current checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418
+[0m08:56:44.086851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '26cbad08-d016-4e14-b49e-eed9b928377a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D23FFEA80>]}
+[0m08:56:47.782661 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.resource_manager_model.models.staging
+[0m08:56:47.787643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '26cbad08-d016-4e14-b49e-eed9b928377a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D29CF17F0>]}
+[0m08:56:47.829131 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\manifest.json
+[0m08:56:47.865744 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\semantic_manifest.json
+[0m08:56:48.203785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '26cbad08-d016-4e14-b49e-eed9b928377a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D29F7B830>]}
+[0m08:56:48.204823 [info ] [MainThread]: Found 489 macros
+[0m08:56:48.204823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26cbad08-d016-4e14-b49e-eed9b928377a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D29D47D40>]}
+[0m08:56:48.205778 [warn ] [MainThread]: The selection criterion 'stg_db_staff' does not match any enabled nodes
+[0m08:56:48.206776 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m08:56:48.207836 [debug] [MainThread]: Command end result
+[0m08:56:48.239748 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\manifest.json
+[0m08:56:48.243737 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\semantic_manifest.json
+[0m08:56:48.251640 [debug] [MainThread]: Wrote artifact RunExecutionResult to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\run_results.json
+[0m08:56:48.252632 [debug] [MainThread]: Command `cli test` succeeded at 08:56:48.252632 after 16.18 seconds
+[0m08:56:48.253628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D244B3FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D23FFEF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D23FFF470>]}
+[0m08:56:48.253628 [debug] [MainThread]: Flushing usage events
+[0m08:56:49.914052 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:58:23.622647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AFD5723C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A811F16A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A811F18E0>]}
+
+
+============================== 08:58:23.626680 | 0699e3ee-af94-4faa-8ea3-dc0560dd9c94 ==============================
+[0m08:58:23.626680 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:58:23.627673 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'c:\\Users\\Mosev\\Documents\\GitHub\\Resource_Manager\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m08:58:25.723942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0699e3ee-af94-4faa-8ea3-dc0560dd9c94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A81DC33B0>]}
+[0m08:58:25.785908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0699e3ee-af94-4faa-8ea3-dc0560dd9c94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A86CD1DC0>]}
+[0m08:58:25.786905 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m08:58:26.218691 [debug] [MainThread]: checksum: cac3b9519010e47bfbeb71ca6efb4867dae2858687671594dc23fefc94ecf25d, vars: {}, profile: , target: dev, version: 1.9.1
+[0m08:58:26.314325 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:58:26.315323 [debug] [MainThread]: previous checksum: cac3b9519010e47bfbeb71ca6efb4867dae2858687671594dc23fefc94ecf25d, current checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418
+[0m08:58:26.315323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0699e3ee-af94-4faa-8ea3-dc0560dd9c94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A86D8E090>]}
+[0m08:58:27.177702 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.resource_manager_model.staging
+[0m08:58:27.184750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0699e3ee-af94-4faa-8ea3-dc0560dd9c94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A874E7B00>]}
+[0m08:58:27.227234 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\manifest.json
+[0m08:58:27.237102 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\semantic_manifest.json
+[0m08:58:27.282287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0699e3ee-af94-4faa-8ea3-dc0560dd9c94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A8778E9F0>]}
+[0m08:58:27.284283 [info ] [MainThread]: Found 489 macros
+[0m08:58:27.285274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0699e3ee-af94-4faa-8ea3-dc0560dd9c94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A87417CE0>]}
+[0m08:58:27.285274 [warn ] [MainThread]: The selection criterion 'final_staff_model' does not match any enabled nodes
+[0m08:58:27.286272 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m08:58:27.287298 [debug] [MainThread]: Command end result
+[0m08:58:27.315954 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\manifest.json
+[0m08:58:27.321934 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\semantic_manifest.json
+[0m08:58:27.325921 [debug] [MainThread]: Wrote artifact RunExecutionResult to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\run_results.json
+[0m08:58:27.327963 [debug] [MainThread]: Command `cli test` succeeded at 08:58:27.327963 after 3.95 seconds
+[0m08:58:27.327963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A81B59C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A81C6BFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A817232C0>]}
+[0m08:58:27.329061 [debug] [MainThread]: Flushing usage events
+[0m08:58:29.257453 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:58:55.060391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD00A07440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD007173E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD00A656D0>]}
+
+
+============================== 08:58:55.067366 | 93fe94cd-39a6-45d4-96cc-f37e94a97f99 ==============================
+[0m08:58:55.067366 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:58:55.068370 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'log_path': 'c:\\Users\\Mosev\\Documents\\GitHub\\Resource_Manager\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m08:58:57.054368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93fe94cd-39a6-45d4-96cc-f37e94a97f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD05EBD4C0>]}
+[0m08:58:57.117154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93fe94cd-39a6-45d4-96cc-f37e94a97f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD008E78C0>]}
+[0m08:58:57.118149 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m08:58:57.518247 [debug] [MainThread]: checksum: cac3b9519010e47bfbeb71ca6efb4867dae2858687671594dc23fefc94ecf25d, vars: {}, profile: , target: dev, version: 1.9.1
+[0m08:58:57.591015 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m08:58:57.591015 [debug] [MainThread]: previous checksum: cac3b9519010e47bfbeb71ca6efb4867dae2858687671594dc23fefc94ecf25d, current checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418
+[0m08:58:57.591929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '93fe94cd-39a6-45d4-96cc-f37e94a97f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD00A42B70>]}
+[0m08:58:58.465308 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.resource_manager.staging
+[0m08:58:58.471371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '93fe94cd-39a6-45d4-96cc-f37e94a97f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD066086B0>]}
+[0m08:58:58.517210 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\manifest.json
+[0m08:58:58.524612 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\semantic_manifest.json
+[0m08:58:58.572181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '93fe94cd-39a6-45d4-96cc-f37e94a97f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD066547D0>]}
+[0m08:58:58.573183 [info ] [MainThread]: Found 489 macros
+[0m08:58:58.573183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93fe94cd-39a6-45d4-96cc-f37e94a97f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD065476E0>]}
+[0m08:58:58.574228 [warn ] [MainThread]: The selection criterion 'final_staff_model' does not match any enabled nodes
+[0m08:58:58.575248 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m08:58:58.576248 [debug] [MainThread]: Command end result
+[0m08:58:58.600915 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\manifest.json
+[0m08:58:58.606680 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\semantic_manifest.json
+[0m08:58:58.609754 [debug] [MainThread]: Wrote artifact RunExecutionResult to c:\Users\Mosev\Documents\GitHub\Resource_Manager\target\run_results.json
+[0m08:58:58.612705 [debug] [MainThread]: Command `cli test` succeeded at 08:58:58.612705 after 3.83 seconds
+[0m08:58:58.612705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD7FF0A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD7DF178F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD00BC6F90>]}
+[0m08:58:58.614740 [debug] [MainThread]: Flushing usage events
+[0m08:59:01.652623 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:30:16.336495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FEA3A3AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FEC89A1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FE987AA20>]}
+
+
+============================== 08:30:16.407105 | bc127001-f515-49ac-ba12-ea50267abc0c ==============================
+[0m08:30:16.407105 [info ] [MainThread]: Running with dbt=1.8.0
+[0m08:30:16.407105 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt ', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:30:16.609150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bc127001-f515-49ac-ba12-ea50267abc0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FED24EF60>]}
+[0m08:30:17.691417 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:30:17.692924 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:30:17.701066 [debug] [MainThread]: Command `cli deps` succeeded at 08:30:17.698514 after 1.99 seconds
+[0m08:30:17.702066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FEA3A3AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FED296B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FEC90DB50>]}
+[0m08:30:17.703065 [debug] [MainThread]: Flushing usage events
+[0m19:13:27.773309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B44FB4E960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B44FB4CB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4501015B0>]}
+
+
+============================== 19:13:27.859877 | 1de05cb8-1706-4e89-87c4-c59a4e71fb69 ==============================
+[0m19:13:27.859877 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:13:27.861878 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m19:13:28.056792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1de05cb8-1706-4e89-87c4-c59a4e71fb69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B44DF2A930>]}
+[0m19:13:29.598605 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:13:29.608592 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:13:29.612604 [debug] [MainThread]: Command `cli deps` succeeded at 19:13:29.612604 after 2.48 seconds
+[0m19:13:29.613602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B450139820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B45013B680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4505E3830>]}
+[0m19:13:29.613602 [debug] [MainThread]: Flushing usage events
+[0m08:04:26.556902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002777D714590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002777FCF3800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002777FDB6600>]}
+
+
+============================== 08:04:26.722077 | 891a35ef-b574-4bcc-8256-d272df5e02fd ==============================
+[0m08:04:26.722077 [info ] [MainThread]: Running with dbt=1.8.0
+[0m08:04:26.725085 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m08:04:27.429074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '891a35ef-b574-4bcc-8256-d272df5e02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027700157770>]}
+[0m08:04:30.262682 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:04:30.270669 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:04:30.273666 [debug] [MainThread]: Command `cli deps` succeeded at 08:04:30.273666 after 4.96 seconds
+[0m08:04:30.275659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002777F42BFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002777FDB6E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277006D3FE0>]}
+[0m08:04:30.277659 [debug] [MainThread]: Flushing usage events
+[0m09:13:33.191582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB2229E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB27D60C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB27FC170>]}
+
+
+============================== 09:13:33.245372 | eadb9000-3234-4cb2-a05c-e11a178d44d3 ==============================
+[0m09:13:33.245372 [info ] [MainThread]: Running with dbt=1.8.0
+[0m09:13:33.246371 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m09:13:33.372365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eadb9000-3234-4cb2-a05c-e11a178d44d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB23C79E0>]}
+[0m09:13:34.061693 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:13:34.067689 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:13:34.068690 [debug] [MainThread]: Command `cli deps` succeeded at 09:13:34.068690 after 1.23 seconds
+[0m09:13:34.070030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB24B32F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB25829F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB2F15370>]}
+[0m09:13:34.071052 [debug] [MainThread]: Flushing usage events
+[0m08:49:16.037324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E72955370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E706A2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E72710680>]}
+
+
+============================== 08:49:16.099865 | f48152d4-781d-479a-a6ca-fe187f279a83 ==============================
+[0m08:49:16.099865 [info ] [MainThread]: Running with dbt=1.8.0
+[0m08:49:16.102869 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:49:16.443413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f48152d4-781d-479a-a6ca-fe187f279a83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E72C52210>]}
+[0m08:49:17.421752 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:49:17.427752 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:49:17.431752 [debug] [MainThread]: Command `cli deps` succeeded at 08:49:17.431752 after 2.17 seconds
+[0m08:49:17.433754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E7232E930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E72BD1C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E72D1E1E0>]}
+[0m08:49:17.436768 [debug] [MainThread]: Flushing usage events
+[0m07:49:21.058836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538DD96060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538D2E51C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538DA446E0>]}
+
+
+============================== 07:49:21.143948 | ab438947-35b9-451c-9120-24f2cf6b641c ==============================
+[0m07:49:21.143948 [info ] [MainThread]: Running with dbt=1.8.0
+[0m07:49:21.146374 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m07:49:21.706587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ab438947-35b9-451c-9120-24f2cf6b641c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538DE0FC50>]}
+[0m07:49:22.975413 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:49:22.982939 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:49:22.987175 [debug] [MainThread]: Command `cli deps` succeeded at 07:49:22.986184 after 3.66 seconds
+[0m07:49:22.988174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538DD65B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538E3722D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538D69C6B0>]}
+[0m07:49:22.989158 [debug] [MainThread]: Flushing usage events
+[0m15:26:34.361492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263120C0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026310230080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026311186B40>]}
+
+
+============================== 15:26:34.459027 | 5968735c-9c6f-4305-84cc-463feb487bde ==============================
+[0m15:26:34.459027 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:26:34.462035 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:26:34.852378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5968735c-9c6f-4305-84cc-463feb487bde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263149E5C70>]}
+[0m15:26:36.177225 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:26:36.180694 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:26:36.183163 [debug] [MainThread]: Command `cli deps` succeeded at 15:26:36.183163 after 2.63 seconds
+[0m15:26:36.184175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026314839B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026314686570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026310230080>]}
+[0m15:26:36.185209 [debug] [MainThread]: Flushing usage events
+[0m15:36:15.045635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B3CA6330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B3AC9BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B0416A20>]}
+
+
+============================== 15:36:15.058277 | d7ada686-0629-400e-9e51-e3f3aba4ef82 ==============================
+[0m15:36:15.058277 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:36:15.062271 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:36:15.538820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7ada686-0629-400e-9e51-e3f3aba4ef82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B3AF5C70>]}
+[0m15:36:15.683208 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:36:15.707670 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:36:15.713666 [debug] [MainThread]: Command `cli deps` succeeded at 15:36:15.712674 after 1.41 seconds
+[0m15:36:15.715768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B3CA6330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B0F43410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246B3518980>]}
+[0m15:36:15.716762 [debug] [MainThread]: Flushing usage events
+[0m08:23:22.014467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABE9F3DB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABE5E80080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABEA4E9B80>]}
+
+
+============================== 08:23:22.108051 | fe3a015e-15dc-484d-a9bd-d72cd000e894 ==============================
+[0m08:23:22.108051 [info ] [MainThread]: Running with dbt=1.8.0
+[0m08:23:22.111067 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:23:22.663203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fe3a015e-15dc-484d-a9bd-d72cd000e894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABE9AFE600>]}
+[0m08:23:23.195470 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:23:23.203486 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:23:23.209472 [debug] [MainThread]: Command `cli deps` succeeded at 08:23:23.208564 after 2.03 seconds
+[0m08:23:23.211555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABEA4B9520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABEA4BAE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABEA966900>]}
+[0m08:23:23.213553 [debug] [MainThread]: Flushing usage events
+[0m10:57:35.428673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F54B2330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F61EB140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F2B6A030>]}
+
+
+============================== 10:57:35.434735 | 942c286a-ae74-4686-92ba-500617e8fadc ==============================
+[0m10:57:35.434735 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:57:35.435709 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:57:35.636155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '942c286a-ae74-4686-92ba-500617e8fadc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F5A287D0>]}
+[0m10:57:35.726661 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:57:35.738654 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:57:35.741656 [debug] [MainThread]: Command `cli deps` succeeded at 10:57:35.741656 after 1.04 seconds
+[0m10:57:35.742656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F54B2330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F6694470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F3AA4470>]}
+[0m10:57:35.743657 [debug] [MainThread]: Flushing usage events
+[0m15:48:03.078849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CD8313980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDAFE9CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDAFE8680>]}
+
+
+============================== 15:48:03.141680 | 03a082ed-c1bd-48b0-8579-830e681ebfc0 ==============================
+[0m15:48:03.141680 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:48:03.143710 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:48:03.443484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03a082ed-c1bd-48b0-8579-830e681ebfc0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDB2455B0>]}
+[0m15:48:04.115079 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:48:04.120078 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:48:04.122076 [debug] [MainThread]: Command `cli deps` succeeded at 15:48:04.121116 after 1.75 seconds
+[0m15:48:04.122076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CD8313980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDACADE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDB044E90>]}
+[0m15:48:04.123131 [debug] [MainThread]: Flushing usage events
+[0m08:01:13.710386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657C624710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657EE3D0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657EE3C140>]}
+
+
+============================== 08:01:13.723382 | 378db453-ec67-47c9-a9f2-83e1407b0593 ==============================
+[0m08:01:13.723382 [info ] [MainThread]: Running with dbt=1.8.0
+[0m08:01:13.725370 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m08:01:14.108284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '378db453-ec67-47c9-a9f2-83e1407b0593', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657E83CE60>]}
+[0m08:01:14.461132 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:01:14.469045 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:01:14.473040 [debug] [MainThread]: Command `cli deps` succeeded at 08:01:14.472045 after 1.47 seconds
+[0m08:01:14.474787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657E402780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657E7AC860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657E7AF200>]}
+[0m08:01:14.477181 [debug] [MainThread]: Flushing usage events
+[0m10:31:07.156373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A5788A330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A5553ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A5553F410>]}
+
+
+============================== 10:31:07.161472 | 3daac69c-5af8-4a77-95e2-ff3989171b9d ==============================
+[0m10:31:07.161472 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:31:07.162476 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:31:07.356644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3daac69c-5af8-4a77-95e2-ff3989171b9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A57B70680>]}
+[0m10:31:07.377805 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:31:07.380809 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:31:07.382804 [debug] [MainThread]: Command `cli deps` succeeded at 10:31:07.382804 after 0.65 seconds
+[0m10:31:07.383807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A5842B6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A5788A2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A57C0D100>]}
+[0m10:31:07.383807 [debug] [MainThread]: Flushing usage events
+[0m10:31:08.471281 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:02:23.237237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FCF9D19A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FD25DFDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FD27AB6E0>]}
+
+
+============================== 09:02:23.245332 | 33331570-204b-4644-bd95-a9690a1babab ==============================
+[0m09:02:23.245332 [info ] [MainThread]: Running with dbt=1.9.1
+[0m09:02:23.246326 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'c:\\Users\\Mosev\\OneDrive - SAFAL GROUP\\Documents\\GitHub\\Resource_Manager\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Mosev\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m09:02:23.480352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33331570-204b-4644-bd95-a9690a1babab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FD1D54EC0>]}
+[0m09:02:23.513513 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:02:23.518220 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:02:23.520542 [debug] [MainThread]: Command `cli deps` succeeded at 09:02:23.519328 after 0.78 seconds
+[0m09:02:23.521551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FD1D55460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FD27D7E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FD27D7B60>]}
+[0m09:02:23.522599 [debug] [MainThread]: Flushing usage events
+[0m09:02:24.758565 [debug] [MainThread]: An error was encountered while trying to flush usage events
